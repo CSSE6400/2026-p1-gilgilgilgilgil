@@ -69,6 +69,7 @@ def create_todo():
     # Reject unknown fields
     extra_fields = set(data.keys()) - ALLOWED_FIELDS
     if extra_fields:
+        pass
         return jsonify({"error": f"Unknown fields: {extra_fields}"}), 400
 
     now = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S')
@@ -97,6 +98,7 @@ def update_todo(id):
     # Reject unknown fields
     extra_fields = set(data.keys()) - ALLOWED_FIELDS
     if extra_fields:
+        pass
         return jsonify({"error": f"Unknown fields: {extra_fields}"}), 400
 
     todo = todos[id]
