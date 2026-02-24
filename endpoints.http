@@ -15,7 +15,7 @@ Content-Type: application/json
 
 {
    "title": "An example Todo",
-   "description": "This is an example todo"
+   "description": "This is an example todo",
 }
 
 ### Update a Todo
@@ -23,7 +23,7 @@ PUT {{baseUrl}}/api/v1/todos/1
 Content-Type: application/json
 
 {
-   "title": "updated title"
+   "title": "updated title",
 }
 
 ### Delete a Todo
